@@ -1,12 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toucharea="http://schemas.android.com/apk/res/name.sheremetat.sample"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:gravity="center"
     android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="#fff"
+        android:layout_gravity="center_vertical|center_horizontal" >
 
-</LinearLayout>
+        <name.sheremetat.sample.RoundButton
+            android:id="@+id/button_top"
+            toucharea:toucharea="@array/touch_area_btntop"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="250dp"
+            android:layout_height="103dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Up"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:background="@drawable/btn_top" />
+		<name.sheremetat.sample.RoundButton
+            android:id="@+id/button_left"
+            toucharea:toucharea="@array/touch_area_btnleft"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="76dp"
+            android:layout_width="128dp"
+            android:layout_height="173dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Left"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:background="@drawable/btn_left" />
+		<name.sheremetat.sample.RoundButton
+            android:id="@+id/button_right"
+            toucharea:toucharea="@array/touch_area_btnright"
+            android:layout_marginLeft="126dp"
+            android:layout_marginTop="76dp"
+            android:layout_width="121dp"
+            android:layout_height="173dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Right"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:background="@drawable/btn_right" />
+    </RelativeLayout>
+
+</RelativeLayout>

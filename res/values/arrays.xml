@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <array name="touch_area_btntop">
+        <item>90 18 73 22</item>
+        <item>58 33 135 34</item>
+        <item>44 48 45 38</item>
+        <item>167 48 45 38</item>
+   </array>  
+   <array name="touch_area_btnleft">
+        <item>25 22 49 69</item>
+        <item>45 82 45 42</item>
+        <item>72 94 51 53</item>
+   </array>  
+   <array name="touch_area_btnright">
+        <item>55 22 46 71</item>
+        <item>58 33 48 34</item>
+        <item>5 81 47 51</item>
+   </array>  
+</resources>
